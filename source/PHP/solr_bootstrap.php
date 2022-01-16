@@ -9,13 +9,13 @@ const SOLR_SECURE = false;
 const SOLR_SERVER_PORT = ((SOLR_SECURE) ? 8443 : 8983);
 
 /* Username for Basic Authentication */
-const SOLR_SERVER_USERNAME = 'gerbeaud';
+const SOLR_SERVER_USERNAME = '';
 
 /* Password for Basic Authentication */
-const SOLR_SERVER_PASSWORD = 'SolrRocks';
+const SOLR_SERVER_PASSWORD = '';
 
 /* Name of the Solr core */
-const SOLR_SERVER_PATH = 'solr/gerbeaud_sample';
+const SOLR_SERVER_PATH = '';
 
 /* Solr query response format */
 const SOLR_WT = 'json';
