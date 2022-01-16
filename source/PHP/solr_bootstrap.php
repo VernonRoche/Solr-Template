@@ -1,6 +1,6 @@
 <?php
 /* Solr server IP */
-const SOLR_SERVER_HOSTNAME = '78f65bce-3431-4fcc-8e09-a67c4a157d50.pub.instances.scw.cloud';
+const SOLR_SERVER_HOSTNAME = '';
 
 /* Enable secure mode */
 const SOLR_SECURE = false;
