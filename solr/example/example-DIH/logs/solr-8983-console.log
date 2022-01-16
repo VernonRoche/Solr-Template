@@ -1,0 +1,16 @@
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 1)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 12)
+OpenJDK 64-Bit Server VM warning: Failed to reserve shared memory. (error = 12)
+2021-05-18 09:49:50.420 INFO  (main) [   ] o.e.j.u.log Logging initialized @1397ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-05-18 09:49:50.625 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.34.v20201102; built: 2020-11-02T14:15:39.302Z; git: e46af88704a893fc12cb0e3bf46e2c7b48a009e7; jvm 14.0.2+12-Ubuntu-120.04
+2021-05-18 09:49:50.649 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///home/altyriss/MEGAsync/Informatique/Stage%20Server/solr-8.8.2/server/contexts/] at interval 0
+2021-05-18 09:49:51.047 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2021-05-18 09:49:51.061 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2021-05-18 09:49:51.061 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2021-05-18 09:49:51.064 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2021-05-18 09:49:51.156 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2021-05-18 09:49:51.163 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.8.2
+2021-05-18 09:49:51.163 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2021-05-18 09:49:51.163 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/altyriss/MEGAsync/Informatique/Stage Server/solr-8.8.2
+2021-05-18 09:49:51.163 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-05-18T09:49:51.163647Z
+Loading class `com.mysql.jdbc.Driver'. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver'. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.

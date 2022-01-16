@@ -1,0 +1,10 @@
+<dataConfig>
+    <dataSource driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/makble?useUnicode=true&#038;characterEncoding=UTF-8" user="root" password="" />
+    <document>
+        <entity name="post" query="select * from post">
+            <field column="postid" name="id" />
+            <field column="title" name="name" />
+            <field column="contents" name="contenttext" />
+        </entity>
+    </document>
+</dataConfig>

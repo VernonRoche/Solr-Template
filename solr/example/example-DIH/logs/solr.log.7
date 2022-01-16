@@ -1,0 +1,305 @@
+2021-05-18 09:45:21.436 INFO  (main) [   ] o.e.j.u.log Logging initialized @1348ms to org.eclipse.jetty.util.log.Slf4jLog
+2021-05-18 09:45:21.643 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.34.v20201102; built: 2020-11-02T14:15:39.302Z; git: e46af88704a893fc12cb0e3bf46e2c7b48a009e7; jvm 14.0.2+12-Ubuntu-120.04
+2021-05-18 09:45:21.666 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///home/altyriss/MEGAsync/Informatique/Stage%20Server/solr-8.8.2/server/contexts/] at interval 0
+2021-05-18 09:45:21.996 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2021-05-18 09:45:22.009 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2021-05-18 09:45:22.009 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2021-05-18 09:45:22.011 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 600000ms
+2021-05-18 09:45:22.091 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2021-05-18 09:45:22.097 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.8.2
+2021-05-18 09:45:22.097 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2021-05-18 09:45:22.097 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /home/altyriss/MEGAsync/Informatique/Stage Server/solr-8.8.2
+2021-05-18 09:45:22.097 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2021-05-18T09:45:22.097883Z
+2021-05-18 09:45:22.116 INFO  (main) [   ] o.a.s.c.SolrPaths Using system property solr.solr.home: /home/altyriss/MEGAsync/Informatique/Stage Server/solr-8.8.2/example/example-DIH/mysql
+2021-05-18 09:45:22.116 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /home/altyriss/MEGAsync/Informatique/Stage Server/solr-8.8.2/example/example-DIH/mysql/solr.xml
+2021-05-18 09:45:22.199 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@3a7442c7, but no JMX reporters were configured - adding default JMX reporter.
+2021-05-18 09:45:22.743 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2021-05-18 09:45:23.008 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@37ce3644[provider=null,keyStore=null,trustStore=null]
+2021-05-18 09:45:23.009 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@37ce3644[provider=null,keyStore=null,trustStore=null]
+2021-05-18 09:45:23.272 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@2e53b094[provider=null,keyStore=null,trustStore=null]
+2021-05-18 09:45:23.272 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@2e53b094[provider=null,keyStore=null,trustStore=null]
+2021-05-18 09:45:23.331 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2021-05-18 09:45:23.520 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2021-05-18 09:45:23.522 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2021-05-18 09:45:23.609 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3a7442c7
+2021-05-18 09:45:23.610 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3a7442c7
+2021-05-18 09:45:23.616 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3a7442c7
+2021-05-18 09:45:23.655 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 5 core definitions underneath /home/altyriss/MEGAsync/Informatique/Stage Server/solr-8.8.2/example/example-DIH/mysql
+2021-05-18 09:45:23.656 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [atom, tika, solr, db, mail]
+2021-05-18 09:45:23.690 INFO  (coreLoadExecutor-13-thread-1) [   x:atom] o.a.s.c.SolrResourceLoader Added 2 libs to classloader, from paths: [/home/altyriss/MEGAsync/Informatique/Stage%20Server/solr-8.8.2/dist]
+2021-05-18 09:45:23.690 INFO  (coreLoadExecutor-13-thread-2) [   x:tika] o.a.s.c.SolrResourceLoader Added 47 libs to classloader, from paths: [/home/altyriss/MEGAsync/Informatique/Stage%20Server/solr-8.8.2/contrib/extraction/lib, /home/altyriss/MEGAsync/Informatique/Stage%20Server/solr-8.8.2/dist]
+2021-05-18 09:45:23.716 INFO  (coreLoadExecutor-13-thread-3) [   x:solr] o.a.s.c.SolrResourceLoader Added 58 libs to classloader, from paths: [/home/altyriss/MEGAsync/Informatique/Stage%20Server/solr-8.8.2/contrib/extraction/lib, /home/altyriss/MEGAsync/Informatique/Stage%20Server/solr-8.8.2/contrib/langid/lib, /home/altyriss/MEGAsync/Informatique/Stage%20Server/solr-8.8.2/contrib/velocity/lib, /home/altyriss/MEGAsync/Informatique/Stage%20Server/solr-8.8.2/dist]
+2021-05-18 09:45:23.731 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@5b40ceb{/solr,file:///home/altyriss/MEGAsync/Informatique/Stage%20Server/solr-8.8.2/server/solr-webapp/webapp/,AVAILABLE}{/home/altyriss/MEGAsync/Informatique/Stage Server/solr-8.8.2/server/solr-webapp/webapp}
+2021-05-18 09:45:23.757 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@6399551e{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2021-05-18 09:45:23.757 INFO  (main) [   ] o.e.j.s.Server Started @3672ms
+2021-05-18 09:45:23.948 INFO  (coreLoadExecutor-13-thread-2) [   x:tika] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.2
+2021-05-18 09:45:23.948 INFO  (coreLoadExecutor-13-thread-1) [   x:atom] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.2
+2021-05-18 09:45:23.951 INFO  (coreLoadExecutor-13-thread-3) [   x:solr] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.2
+2021-05-18 09:45:24.014 INFO  (coreLoadExecutor-13-thread-3) [   x:solr] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2021-05-18 09:45:24.091 INFO  (coreLoadExecutor-13-thread-2) [   x:tika] o.a.s.s.IndexSchema Schema name=example-DIH-tika
+2021-05-18 09:45:24.092 INFO  (coreLoadExecutor-13-thread-1) [   x:atom] o.a.s.s.IndexSchema Schema name=example-DIH-atom
+2021-05-18 09:45:24.116 INFO  (coreLoadExecutor-13-thread-3) [   x:solr] o.a.s.s.IndexSchema Schema name=example-DIH-solr
+2021-05-18 09:45:24.127 INFO  (coreLoadExecutor-13-thread-2) [   x:tika] o.a.s.s.IndexSchema Loaded schema example-DIH-tika/1.6 with uniqueid field id
+2021-05-18 09:45:24.128 INFO  (coreLoadExecutor-13-thread-2) [   x:tika] o.a.s.c.CoreContainer Creating SolrCore 'tika' using configuration from instancedir /home/altyriss/MEGAsync/Informatique/Stage Server/solr-8.8.2/example/example-DIH/mysql/tika, trusted=true
+2021-05-18 09:45:24.154 WARN  (coreLoadExecutor-13-thread-3) [   x:solr] o.a.s.D.s.LatLonType Solr loaded a deprecated plugin/analysis class [solr.LatLonType]. Please consult documentation how to replace it accordingly.
+2021-05-18 09:45:24.195 INFO  (coreLoadExecutor-13-thread-2) [   x:tika] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.tika' (registry 'solr.core.tika') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3a7442c7
+2021-05-18 09:45:24.216 INFO  (coreLoadExecutor-13-thread-2) [   x:tika] o.a.s.c.SolrCore [[tika] ] Opening new SolrCore at [/home/altyriss/MEGAsync/Informatique/Stage Server/solr-8.8.2/example/example-DIH/mysql/tika], dataDir=[/home/altyriss/MEGAsync/Informatique/Stage Server/solr-8.8.2/example/example-DIH/mysql/tika/data/]
+2021-05-18 09:45:24.249 INFO  (coreLoadExecutor-13-thread-1) [   x:atom] o.a.s.s.IndexSchema Loaded schema example-DIH-atom/1.6 with uniqueid field id
+2021-05-18 09:45:24.259 INFO  (coreLoadExecutor-13-thread-1) [   x:atom] o.a.s.c.CoreContainer Creating SolrCore 'atom' using configuration from instancedir /home/altyriss/MEGAsync/Informatique/Stage Server/solr-8.8.2/example/example-DIH/mysql/atom, trusted=true
+2021-05-18 09:45:24.259 INFO  (coreLoadExecutor-13-thread-1) [   x:atom] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.atom' (registry 'solr.core.atom') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3a7442c7
+2021-05-18 09:45:24.260 INFO  (coreLoadExecutor-13-thread-1) [   x:atom] o.a.s.c.SolrCore [[atom] ] Opening new SolrCore at [/home/altyriss/MEGAsync/Informatique/Stage Server/solr-8.8.2/example/example-DIH/mysql/atom], dataDir=[/home/altyriss/MEGAsync/Informatique/Stage Server/solr-8.8.2/example/example-DIH/mysql/atom/data/]
+2021-05-18 09:45:24.402 INFO  (coreLoadExecutor-13-thread-3) [   x:solr] o.a.s.s.IndexSchema Loaded schema example-DIH-solr/1.6 with uniqueid field id
+2021-05-18 09:45:24.474 INFO  (coreLoadExecutor-13-thread-3) [   x:solr] o.a.s.c.CoreContainer Creating SolrCore 'solr' using configuration from instancedir /home/altyriss/MEGAsync/Informatique/Stage Server/solr-8.8.2/example/example-DIH/mysql/solr, trusted=true
+2021-05-18 09:45:24.475 INFO  (coreLoadExecutor-13-thread-3) [   x:solr] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.solr' (registry 'solr.core.solr') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3a7442c7
+2021-05-18 09:45:24.479 INFO  (coreLoadExecutor-13-thread-3) [   x:solr] o.a.s.c.SolrCore [[solr] ] Opening new SolrCore at [/home/altyriss/MEGAsync/Informatique/Stage Server/solr-8.8.2/example/example-DIH/mysql/solr], dataDir=[/home/altyriss/MEGAsync/Informatique/Stage Server/solr-8.8.2/example/example-DIH/mysql/solr/data/]
+2021-05-18 09:45:24.502 INFO  (coreLoadExecutor-13-thread-3) [   x:solr] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2021-05-18 09:45:24.809 WARN  (coreLoadExecutor-13-thread-3) [   x:solr] o.a.s.h.d.DataImportHandler Data Import Handler is deprecated as of Solr 8.6. See SOLR-14066 for more details.
+2021-05-18 09:45:24.814 WARN  (coreLoadExecutor-13-thread-1) [   x:atom] o.a.s.h.d.DataImportHandler Data Import Handler is deprecated as of Solr 8.6. See SOLR-14066 for more details.
+2021-05-18 09:45:24.816 WARN  (coreLoadExecutor-13-thread-2) [   x:tika] o.a.s.h.d.DataImportHandler Data Import Handler is deprecated as of Solr 8.6. See SOLR-14066 for more details.
+2021-05-18 09:45:24.824 INFO  (coreLoadExecutor-13-thread-1) [   x:atom] o.a.s.u.CommitTracker Hard AutoCommit: disabled
+2021-05-18 09:45:24.824 INFO  (coreLoadExecutor-13-thread-2) [   x:tika] o.a.s.u.CommitTracker Hard AutoCommit: disabled
+2021-05-18 09:45:24.825 INFO  (coreLoadExecutor-13-thread-1) [   x:atom] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-05-18 09:45:24.825 INFO  (coreLoadExecutor-13-thread-2) [   x:tika] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-05-18 09:45:24.831 INFO  (coreLoadExecutor-13-thread-3) [   x:solr] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-05-18 09:45:24.832 INFO  (coreLoadExecutor-13-thread-3) [   x:solr] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-05-18 09:45:24.849 INFO  (coreLoadExecutor-13-thread-3) [   x:solr] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-05-18 09:45:24.849 INFO  (coreLoadExecutor-13-thread-3) [   x:solr] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-05-18 09:45:24.954 INFO  (coreLoadExecutor-13-thread-2) [   x:tika] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/altyriss/MEGAsync/Informatique/Stage Server/solr-8.8.2/example/example-DIH/mysql/tika/conf
+2021-05-18 09:45:24.954 INFO  (coreLoadExecutor-13-thread-1) [   x:atom] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/altyriss/MEGAsync/Informatique/Stage Server/solr-8.8.2/example/example-DIH/mysql/atom/conf
+2021-05-18 09:45:24.976 INFO  (coreLoadExecutor-13-thread-2) [   x:tika] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-05-18 09:45:24.978 INFO  (coreLoadExecutor-13-thread-1) [   x:atom] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-05-18 09:45:24.989 INFO  (coreLoadExecutor-13-thread-3) [   x:solr] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/altyriss/MEGAsync/Informatique/Stage Server/solr-8.8.2/example/example-DIH/mysql/solr/conf
+2021-05-18 09:45:24.990 INFO  (coreLoadExecutor-13-thread-3) [   x:solr] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-05-18 09:45:24.993 INFO  (searcherExecutor-17-thread-1-processing-x:atom) [   x:atom] o.a.s.c.SolrCore [atom]  Registered new searcher autowarm time: 0 ms
+2021-05-18 09:45:24.995 INFO  (searcherExecutor-15-thread-1-processing-x:tika) [   x:tika] o.a.s.c.SolrCore [tika]  Registered new searcher autowarm time: 0 ms
+2021-05-18 09:45:25.004 INFO  (coreLoadExecutor-13-thread-3) [   x:solr] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-05-18 09:45:25.004 INFO  (coreLoadExecutor-13-thread-2) [   x:db] o.a.s.c.SolrResourceLoader Added 60 libs to classloader, from paths: [/home/altyriss/MEGAsync/Informatique/Stage%20Server/solr-8.8.2/contrib/extraction/lib, /home/altyriss/MEGAsync/Informatique/Stage%20Server/solr-8.8.2/contrib/langid/lib, /home/altyriss/MEGAsync/Informatique/Stage%20Server/solr-8.8.2/contrib/velocity/lib, /home/altyriss/MEGAsync/Informatique/Stage%20Server/solr-8.8.2/dist, /home/altyriss/MEGAsync/Informatique/Stage%20Server/solr-8.8.2/example/example-DIH/mysql/db/lib]
+2021-05-18 09:45:25.005 WARN  (coreLoadExecutor-13-thread-1) [   x:mail] o.a.s.c.SolrConfig Couldn't add files from /home/altyriss/MEGAsync/Informatique/Stage Server/solr-8.8.2/contrib/dataimporthandler/lib filtered by .*\.jar to classpath: java.nio.file.NoSuchFileException: /home/altyriss/MEGAsync/Informatique/Stage Server/solr-8.8.2/contrib/dataimporthandler/lib
+2021-05-18 09:45:25.028 INFO  (coreLoadExecutor-13-thread-1) [   x:mail] o.a.s.c.SolrResourceLoader Added 61 libs to classloader, from paths: [/home/altyriss/MEGAsync/Informatique/Stage%20Server/solr-8.8.2/contrib/dataimporthandler-extras/lib, /home/altyriss/MEGAsync/Informatique/Stage%20Server/solr-8.8.2/contrib/extraction/lib, /home/altyriss/MEGAsync/Informatique/Stage%20Server/solr-8.8.2/contrib/langid/lib, /home/altyriss/MEGAsync/Informatique/Stage%20Server/solr-8.8.2/contrib/velocity/lib, /home/altyriss/MEGAsync/Informatique/Stage%20Server/solr-8.8.2/dist]
+2021-05-18 09:45:25.050 INFO  (coreLoadExecutor-13-thread-3) [   x:solr] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2021-05-18 09:45:25.055 INFO  (coreLoadExecutor-13-thread-3) [   x:solr] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+2021-05-18 09:45:25.069 INFO  (coreLoadExecutor-13-thread-2) [   x:db] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.2
+2021-05-18 09:45:25.074 INFO  (coreLoadExecutor-13-thread-1) [   x:mail] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.8.2
+2021-05-18 09:45:25.087 INFO  (coreLoadExecutor-13-thread-3) [   x:solr] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+2021-05-18 09:45:25.088 INFO  (coreLoadExecutor-13-thread-3) [   x:solr] o.a.s.h.c.SuggestComponent Registering searcher listener for suggester: mySuggester = SuggesterListener [core=org.apache.solr.core.SolrCore@2ded8dde, suggester=SolrSuggester [ name=mySuggester, sourceLocation=null, storeDir=, lookupImpl=FuzzyLookupFactory, dictionaryImpl=DocumentDictionaryFactory, sizeInBytes=0 ], buildOnCommit=false, buildOnOptimize=false, buildOnStartup=true, isCoreReload=false]
+2021-05-18 09:45:25.090 INFO  (coreLoadExecutor-13-thread-3) [   x:solr] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /home/altyriss/MEGAsync/Informatique/Stage Server/solr-8.8.2/example/example-DIH/mysql/solr/conf/elevate.xml
+2021-05-18 09:45:25.098 INFO  (coreLoadExecutor-13-thread-2) [   x:db] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2021-05-18 09:45:25.105 INFO  (coreLoadExecutor-13-thread-1) [   x:mail] o.a.s.u.SolrIndexConfig IndexWriter infoStream solr logging is enabled
+2021-05-18 09:45:25.110 INFO  (coreLoadExecutor-13-thread-3) [   x:solr] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-05-18 09:45:25.119 INFO  (coreLoadExecutor-13-thread-3) [   x:solr] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1700088905852780544
+2021-05-18 09:45:25.190 INFO  (coreLoadExecutor-13-thread-2) [   x:db] o.a.s.s.IndexSchema Schema name=example-DIH-db
+2021-05-18 09:45:25.195 INFO  (coreLoadExecutor-13-thread-1) [   x:mail] o.a.s.s.IndexSchema Schema name=example-DIH-mail
+2021-05-18 09:45:25.240 INFO  (searcherExecutor-19-thread-1-processing-x:solr) [   x:solr] o.a.s.c.S.Request [solr]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=0 status=0 QTime=108
+2021-05-18 09:45:25.241 INFO  (searcherExecutor-19-thread-1-processing-x:solr) [   x:solr] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-05-18 09:45:25.241 INFO  (searcherExecutor-19-thread-1-processing-x:solr) [   x:solr] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-05-18 09:45:25.241 INFO  (searcherExecutor-19-thread-1-processing-x:solr) [   x:solr] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2021-05-18 09:45:25.241 INFO  (searcherExecutor-19-thread-1-processing-x:solr) [   x:solr] o.a.s.h.c.SuggestComponent buildOnStartup: mySuggester
+2021-05-18 09:45:25.241 INFO  (searcherExecutor-19-thread-1-processing-x:solr) [   x:solr] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2021-05-18 09:45:25.257 INFO  (coreLoadExecutor-13-thread-2) [   x:db] o.a.s.s.IndexSchema Loaded schema example-DIH-db/1.6 with uniqueid field id
+2021-05-18 09:45:25.261 INFO  (coreLoadExecutor-13-thread-1) [   x:mail] o.a.s.s.IndexSchema Loaded schema example-DIH-mail/1.6 with uniqueid field messageId
+2021-05-18 09:45:25.265 INFO  (searcherExecutor-19-thread-1-processing-x:solr) [   x:solr] o.a.s.c.SolrCore [solr]  Registered new searcher autowarm time: 0 ms
+2021-05-18 09:45:25.305 INFO  (coreLoadExecutor-13-thread-2) [   x:db] o.a.s.c.CoreContainer Creating SolrCore 'db' using configuration from instancedir /home/altyriss/MEGAsync/Informatique/Stage Server/solr-8.8.2/example/example-DIH/mysql/db, trusted=true
+2021-05-18 09:45:25.306 INFO  (coreLoadExecutor-13-thread-2) [   x:db] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.db' (registry 'solr.core.db') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3a7442c7
+2021-05-18 09:45:25.306 INFO  (coreLoadExecutor-13-thread-2) [   x:db] o.a.s.c.SolrCore [[db] ] Opening new SolrCore at [/home/altyriss/MEGAsync/Informatique/Stage Server/solr-8.8.2/example/example-DIH/mysql/db], dataDir=[/home/altyriss/MEGAsync/Informatique/Stage Server/solr-8.8.2/example/example-DIH/mysql/db/data/]
+2021-05-18 09:45:25.306 INFO  (coreLoadExecutor-13-thread-1) [   x:mail] o.a.s.c.CoreContainer Creating SolrCore 'mail' using configuration from instancedir /home/altyriss/MEGAsync/Informatique/Stage Server/solr-8.8.2/example/example-DIH/mysql/mail, trusted=true
+2021-05-18 09:45:25.307 INFO  (coreLoadExecutor-13-thread-1) [   x:mail] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.mail' (registry 'solr.core.mail') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@3a7442c7
+2021-05-18 09:45:25.307 INFO  (coreLoadExecutor-13-thread-1) [   x:mail] o.a.s.c.SolrCore [[mail] ] Opening new SolrCore at [/home/altyriss/MEGAsync/Informatique/Stage Server/solr-8.8.2/example/example-DIH/mysql/mail], dataDir=[/home/altyriss/MEGAsync/Informatique/Stage Server/solr-8.8.2/example/example-DIH/mysql/mail/data/]
+2021-05-18 09:45:25.310 INFO  (coreLoadExecutor-13-thread-2) [   x:db] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2021-05-18 09:45:25.311 INFO  (coreLoadExecutor-13-thread-1) [   x:mail] o.a.s.r.XSLTResponseWriter xsltCacheLifetimeSeconds=5
+2021-05-18 09:45:25.388 WARN  (coreLoadExecutor-13-thread-1) [   x:mail] o.a.s.h.d.DataImportHandler Data Import Handler is deprecated as of Solr 8.6. See SOLR-14066 for more details.
+2021-05-18 09:45:25.389 WARN  (coreLoadExecutor-13-thread-2) [   x:db] o.a.s.h.d.DataImportHandler Data Import Handler is deprecated as of Solr 8.6. See SOLR-14066 for more details.
+2021-05-18 09:45:25.392 INFO  (coreLoadExecutor-13-thread-1) [   x:mail] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-05-18 09:45:25.393 INFO  (coreLoadExecutor-13-thread-1) [   x:mail] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-05-18 09:45:25.395 INFO  (coreLoadExecutor-13-thread-2) [   x:db] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2021-05-18 09:45:25.396 INFO  (coreLoadExecutor-13-thread-2) [   x:db] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2021-05-18 09:45:25.396 INFO  (coreLoadExecutor-13-thread-1) [   x:mail] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-05-18 09:45:25.396 INFO  (coreLoadExecutor-13-thread-1) [   x:mail] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-05-18 09:45:25.401 INFO  (coreLoadExecutor-13-thread-2) [   x:db] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2021-05-18 09:45:25.401 INFO  (coreLoadExecutor-13-thread-2) [   x:db] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2021-05-18 09:45:25.402 INFO  (coreLoadExecutor-13-thread-1) [   x:mail] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/altyriss/MEGAsync/Informatique/Stage Server/solr-8.8.2/example/example-DIH/mysql/mail/conf
+2021-05-18 09:45:25.403 INFO  (coreLoadExecutor-13-thread-1) [   x:mail] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-05-18 09:45:25.403 INFO  (coreLoadExecutor-13-thread-1) [   x:mail] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-05-18 09:45:25.403 INFO  (coreLoadExecutor-13-thread-1) [   x:mail] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2021-05-18 09:45:25.404 INFO  (coreLoadExecutor-13-thread-1) [   x:mail] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+2021-05-18 09:45:25.404 INFO  (coreLoadExecutor-13-thread-1) [   x:mail] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+2021-05-18 09:45:25.404 INFO  (coreLoadExecutor-13-thread-1) [   x:mail] o.a.s.h.c.SuggestComponent Registering searcher listener for suggester: mySuggester = SuggesterListener [core=org.apache.solr.core.SolrCore@404f1be7, suggester=SolrSuggester [ name=mySuggester, sourceLocation=null, storeDir=, lookupImpl=FuzzyLookupFactory, dictionaryImpl=DocumentDictionaryFactory, sizeInBytes=0 ], buildOnCommit=false, buildOnOptimize=false, buildOnStartup=true, isCoreReload=false]
+2021-05-18 09:45:25.404 INFO  (coreLoadExecutor-13-thread-1) [   x:mail] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /home/altyriss/MEGAsync/Informatique/Stage Server/solr-8.8.2/example/example-DIH/mysql/mail/conf/elevate.xml
+2021-05-18 09:45:25.407 INFO  (coreLoadExecutor-13-thread-1) [   x:mail] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-05-18 09:45:25.409 INFO  (coreLoadExecutor-13-thread-2) [   x:db] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /home/altyriss/MEGAsync/Informatique/Stage Server/solr-8.8.2/example/example-DIH/mysql/db/conf
+2021-05-18 09:45:25.410 INFO  (coreLoadExecutor-13-thread-2) [   x:db] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2021-05-18 09:45:25.410 INFO  (coreLoadExecutor-13-thread-2) [   x:db] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=text,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2021-05-18 09:45:25.410 INFO  (coreLoadExecutor-13-thread-2) [   x:db] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2021-05-18 09:45:25.411 INFO  (coreLoadExecutor-13-thread-2) [   x:db] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+2021-05-18 09:45:25.411 INFO  (coreLoadExecutor-13-thread-2) [   x:db] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,dictionaryImpl=DocumentDictionaryFactory,field=cat,weightField=price,suggestAnalyzerFieldType=string}
+2021-05-18 09:45:25.411 INFO  (coreLoadExecutor-13-thread-2) [   x:db] o.a.s.h.c.SuggestComponent Registering searcher listener for suggester: mySuggester = SuggesterListener [core=org.apache.solr.core.SolrCore@4f5320df, suggester=SolrSuggester [ name=mySuggester, sourceLocation=null, storeDir=, lookupImpl=FuzzyLookupFactory, dictionaryImpl=DocumentDictionaryFactory, sizeInBytes=0 ], buildOnCommit=false, buildOnOptimize=false, buildOnStartup=true, isCoreReload=false]
+2021-05-18 09:45:25.411 INFO  (coreLoadExecutor-13-thread-2) [   x:db] o.a.s.h.c.QueryElevationComponent Loading QueryElevation from: /home/altyriss/MEGAsync/Informatique/Stage Server/solr-8.8.2/example/example-DIH/mysql/db/conf/elevate.xml
+2021-05-18 09:45:25.414 INFO  (coreLoadExecutor-13-thread-1) [   x:mail] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1700088906161061888
+2021-05-18 09:45:25.417 INFO  (coreLoadExecutor-13-thread-2) [   x:db] o.a.s.h.ReplicationHandler Commits will be reserved for 10000 ms
+2021-05-18 09:45:25.418 INFO  (searcherExecutor-33-thread-1-processing-x:mail) [   x:mail] o.a.s.c.S.Request [mail]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=0 status=0 QTime=1
+2021-05-18 09:45:25.418 INFO  (searcherExecutor-33-thread-1-processing-x:mail) [   x:mail] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-05-18 09:45:25.418 INFO  (searcherExecutor-33-thread-1-processing-x:mail) [   x:mail] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-05-18 09:45:25.418 INFO  (searcherExecutor-33-thread-1-processing-x:mail) [   x:mail] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2021-05-18 09:45:25.418 INFO  (searcherExecutor-33-thread-1-processing-x:mail) [   x:mail] o.a.s.h.c.SuggestComponent buildOnStartup: mySuggester
+2021-05-18 09:45:25.418 INFO  (searcherExecutor-33-thread-1-processing-x:mail) [   x:mail] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2021-05-18 09:45:25.422 INFO  (searcherExecutor-33-thread-1-processing-x:mail) [   x:mail] o.a.s.c.SolrCore [mail]  Registered new searcher autowarm time: 0 ms
+2021-05-18 09:45:25.424 INFO  (coreLoadExecutor-13-thread-2) [   x:db] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1700088906172596224
+2021-05-18 09:45:25.429 INFO  (searcherExecutor-31-thread-1-processing-x:db) [   x:db] o.a.s.c.S.Request [db]  webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=0 status=0 QTime=1
+2021-05-18 09:45:25.429 INFO  (searcherExecutor-31-thread-1-processing-x:db) [   x:db] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2021-05-18 09:45:25.429 INFO  (searcherExecutor-31-thread-1-processing-x:db) [   x:db] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2021-05-18 09:45:25.429 INFO  (searcherExecutor-31-thread-1-processing-x:db) [   x:db] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: wordbreak
+2021-05-18 09:45:25.430 INFO  (searcherExecutor-31-thread-1-processing-x:db) [   x:db] o.a.s.h.c.SuggestComponent buildOnStartup: mySuggester
+2021-05-18 09:45:25.430 INFO  (searcherExecutor-31-thread-1-processing-x:db) [   x:db] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2021-05-18 09:45:25.433 INFO  (searcherExecutor-31-thread-1-processing-x:db) [   x:db] o.a.s.c.SolrCore [db]  Registered new searcher autowarm time: 0 ms
+2021-05-18 09:45:26.888 INFO  (qtp1472216456-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1621330928882&since=0} status=0 QTime=2
+2021-05-18 09:45:29.224 INFO  (qtp1472216456-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1621330916223} status=0 QTime=2
+2021-05-18 09:45:29.244 INFO  (qtp1472216456-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1621330916224} status=0 QTime=20
+2021-05-18 09:45:29.274 INFO  (qtp1472216456-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1621330916224} status=0 QTime=17
+2021-05-18 09:45:30.756 INFO  (qtp1472216456-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1621331130642} status=0 QTime=0
+2021-05-18 09:45:30.772 INFO  (qtp1472216456-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1621331130644} status=0 QTime=9
+2021-05-18 09:45:30.792 INFO  (qtp1472216456-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1621331130644} status=0 QTime=14
+2021-05-18 09:45:33.076 INFO  (qtp1472216456-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1621331130642} status=0 QTime=0
+2021-05-18 09:45:33.088 INFO  (qtp1472216456-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1621331130644} status=0 QTime=10
+2021-05-18 09:45:33.093 INFO  (qtp1472216456-23) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1621331130644&ts=1621331130644} status=503 QTime=5
+2021-05-18 09:45:33.095 INFO  (qtp1472216456-22) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/replication params={wt=json&command=details&_=1621331133059} status=0 QTime=7
+2021-05-18 09:45:33.102 INFO  (qtp1472216456-52) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1621331133058} status=0 QTime=11
+2021-05-18 09:45:33.116 INFO  (qtp1472216456-17) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/admin/system params={wt=json&_=1621331133059} status=0 QTime=29
+2021-05-18 09:45:34.109 INFO  (qtp1472216456-26) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1621331130642} status=0 QTime=0
+2021-05-18 09:45:34.113 INFO  (qtp1472216456-19) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1621331134085} status=0 QTime=1
+2021-05-18 09:45:34.120 INFO  (qtp1472216456-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1621331130644} status=0 QTime=9
+2021-05-18 09:45:34.188 INFO  (qtp1472216456-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1621331130642} status=0 QTime=0
+2021-05-18 09:45:34.191 INFO  (qtp1472216456-22) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/admin/mbeans params={cat=QUERY&wt=json&_=1621331134085} status=0 QTime=0
+2021-05-18 09:45:34.208 INFO  (qtp1472216456-19) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=show-config&_=1621331134085} status=0 QTime=15
+2021-05-18 09:45:34.222 INFO  (qtp1472216456-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1621331130644} status=0 QTime=32
+2021-05-18 09:45:34.264 INFO  (qtp1472216456-26) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1621331134085} status=0 QTime=0
+2021-05-18 09:45:37.011 INFO  (qtp1472216456-25) [   x:db] o.a.s.h.d.DataImporter Loading DIH Configuration: db-data-config.xml
+2021-05-18 09:45:37.031 INFO  (qtp1472216456-25) [   x:db] o.a.s.h.d.DataImporter Data Configuration loaded successfully
+2021-05-18 09:45:37.046 INFO  (Thread-14) [   ] o.a.s.h.d.DataImporter Starting Full Import
+2021-05-18 09:45:37.046 INFO  (qtp1472216456-25) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={core=db&indent=on&commit=false&name=dataimport&clean=false&wt=json&command=full-import&entity=post&_=1621331134085&verbose=false} status=0 QTime=37
+2021-05-18 09:45:37.058 INFO  (qtp1472216456-26) [   x:db] o.a.s.c.S.Request [db]  webapp=/solr path=/dataimport params={indent=on&wt=json&command=status&_=1621331134085} status=0 QTime=0
+2021-05-18 09:45:37.074 WARN  (Thread-14) [   ] o.a.s.h.d.SimplePropertiesWriter Unable to read: dataimport.properties
+2021-05-18 09:45:37.156 INFO  (Thread-14) [   ] o.a.s.h.d.JdbcDataSource Creating a connection for entity post with URL: jdbc:mysql://localhost:3306/makble?useUnicode=true&characterEncoding=UTF-8
+2021-05-18 09:45:37.476 ERROR (Thread-14) [   ] o.a.s.h.d.DocBuilder Exception while processing: post document : SolrInputDocument(fields: []):org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: select * from post Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:329)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.createResultSetIterator(JdbcDataSource.java:290)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:285)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:52)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.initQuery(SqlEntityProcessor.java:59)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.nextRow(SqlEntityProcessor.java:73)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:272)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:496)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:435)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:350)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:235)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:427)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:486)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:469)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:453)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$1.call(JdbcDataSource.java:194)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$1.call(JdbcDataSource.java:172)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getConnection(JdbcDataSource.java:530)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:319)
+	... 14 more
+
+2021-05-18 09:45:37.476 INFO  (Thread-14) [   ] o.a.s.u.p.LogUpdateProcessorFactory [db]  webapp=/solr path=/dataimport params={core=db&indent=on&commit=false&name=dataimport&clean=false&wt=json&command=full-import&entity=post&_=1621331134085&verbose=false} status=0 QTime=37{} 0 467
+2021-05-18 09:45:37.476 ERROR (Thread-14) [   ] o.a.s.h.d.DataImporter Full Import failed:java.lang.RuntimeException: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: select * from post Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:275)
+	at org.apache.solr.handler.dataimport.DataImporter.doFullImport(DataImporter.java:427)
+	at org.apache.solr.handler.dataimport.DataImporter.runCmd(DataImporter.java:486)
+	at org.apache.solr.handler.dataimport.DataImporter.lambda$runAsync$0(DataImporter.java:469)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.lang.RuntimeException: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: select * from post Processing Document # 1
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:437)
+	at org.apache.solr.handler.dataimport.DocBuilder.doFullDump(DocBuilder.java:350)
+	at org.apache.solr.handler.dataimport.DocBuilder.execute(DocBuilder.java:235)
+	... 4 more
+Caused by: org.apache.solr.handler.dataimport.DataImportHandlerException: Unable to execute query: select * from post Processing Document # 1
+	at org.apache.solr.handler.dataimport.DataImportHandlerException.wrapAndThrow(DataImportHandlerException.java:69)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:329)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.createResultSetIterator(JdbcDataSource.java:290)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:285)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getData(JdbcDataSource.java:52)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.initQuery(SqlEntityProcessor.java:59)
+	at org.apache.solr.handler.dataimport.SqlEntityProcessor.nextRow(SqlEntityProcessor.java:73)
+	at org.apache.solr.handler.dataimport.EntityProcessorWrapper.nextRow(EntityProcessorWrapper.java:272)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:496)
+	at org.apache.solr.handler.dataimport.DocBuilder.buildDocument(DocBuilder.java:435)
+	... 6 more
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:833)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:453)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$1.call(JdbcDataSource.java:194)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$1.call(JdbcDataSource.java:172)
+	at org.apache.solr.handler.dataimport.JdbcDataSource.getConnection(JdbcDataSource.java:530)
+	at org.apache.solr.handler.dataimport.JdbcDataSource$ResultSetIterator.<init>(JdbcDataSource.java:319)
+	... 14 more
+
+2021-05-18 09:45:37.477 INFO  (Thread-14) [   ] o.a.s.u.DirectUpdateHandler2 start rollback{}
+2021-05-18 09:45:37.488 INFO  (Thread-14) [   ] o.a.s.u.DefaultSolrCoreState New IndexWriter is ready to be used.
+2021-05-18 09:45:37.489 INFO  (Thread-14) [   ] o.a.s.u.DirectUpdateHandler2 end_rollback
+2021-05-18 09:45:39.644 INFO  (qtp1472216456-25) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1621331130642} status=0 QTime=0
+2021-05-18 09:45:39.646 INFO  (qtp1472216456-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1621331139634&since=0} status=0 QTime=0
+2021-05-18 09:45:39.678 INFO  (qtp1472216456-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1621331130644} status=0 QTime=34
+2021-05-18 09:45:49.798 INFO  (qtp1472216456-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1621331139634&since=0} status=0 QTime=0
+2021-05-18 09:46:00.796 INFO  (qtp1472216456-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1621331139634&since=0} status=0 QTime=0
+2021-05-18 09:46:11.793 INFO  (qtp1472216456-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1621331139634&since=0} status=0 QTime=0
+2021-05-18 09:46:22.796 INFO  (qtp1472216456-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1621331139634&since=0} status=0 QTime=0
+2021-05-18 09:46:33.795 INFO  (qtp1472216456-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1621331139634&since=0} status=0 QTime=0
+2021-05-18 09:46:44.791 INFO  (qtp1472216456-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1621331139634&since=0} status=0 QTime=0
+2021-05-18 09:46:55.795 INFO  (qtp1472216456-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1621331139634&since=0} status=0 QTime=0
+2021-05-18 09:47:06.796 INFO  (qtp1472216456-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1621331139634&since=0} status=0 QTime=0
+2021-05-18 09:47:17.796 INFO  (qtp1472216456-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1621331139634&since=0} status=0 QTime=0
+2021-05-18 09:47:28.795 INFO  (qtp1472216456-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1621331139634&since=0} status=0 QTime=0
+2021-05-18 09:47:39.796 INFO  (qtp1472216456-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1621331139634&since=0} status=0 QTime=1
+2021-05-18 09:47:50.795 INFO  (qtp1472216456-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1621331139634&since=0} status=0 QTime=0
+2021-05-18 09:48:01.798 INFO  (qtp1472216456-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1621331139634&since=0} status=0 QTime=1
+2021-05-18 09:48:12.796 INFO  (qtp1472216456-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1621331139634&since=0} status=0 QTime=0
+2021-05-18 09:48:23.795 INFO  (qtp1472216456-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1621331139634&since=0} status=0 QTime=0
+2021-05-18 09:48:34.796 INFO  (qtp1472216456-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1621331139634&since=0} status=0 QTime=1
+2021-05-18 09:48:45.794 INFO  (qtp1472216456-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1621331139634&since=0} status=0 QTime=0
+2021-05-18 09:48:56.796 INFO  (qtp1472216456-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1621331139634&since=0} status=0 QTime=0
+2021-05-18 09:49:07.795 INFO  (qtp1472216456-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1621331139634&since=0} status=0 QTime=0
+2021-05-18 09:49:18.795 INFO  (qtp1472216456-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1621331139634&since=0} status=0 QTime=0
+2021-05-18 09:49:29.796 INFO  (qtp1472216456-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1621331139634&since=0} status=0 QTime=0
+2021-05-18 09:49:40.796 INFO  (qtp1472216456-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1621331139634&since=0} status=0 QTime=0
+2021-05-18 09:49:41.737 INFO  (ShutdownMonitor) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@6399551e{HTTP/1.1, (http/1.1, h2c)}{0.0.0.0:8983}
+2021-05-18 09:49:41.738 INFO  (ShutdownMonitor) [   ] o.e.j.s.session node0 Stopped scavenging
+2021-05-18 09:49:41.740 INFO  (ShutdownMonitor) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=1272744797
+2021-05-18 09:49:41.741 INFO  (coreCloseExecutor-43-thread-1) [   ] o.a.s.c.SolrCore [tika]  CLOSING SolrCore org.apache.solr.core.SolrCore@2432f78d
+2021-05-18 09:49:41.742 INFO  (coreCloseExecutor-43-thread-1) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.tika tag=SolrCore@2432f78d
+2021-05-18 09:49:41.742 INFO  (coreCloseExecutor-43-thread-2) [   ] o.a.s.c.SolrCore [atom]  CLOSING SolrCore org.apache.solr.core.SolrCore@faf57fc
+2021-05-18 09:49:41.742 INFO  (coreCloseExecutor-43-thread-3) [   ] o.a.s.c.SolrCore [solr]  CLOSING SolrCore org.apache.solr.core.SolrCore@2ded8dde
+2021-05-18 09:49:41.742 INFO  (coreCloseExecutor-43-thread-4) [   ] o.a.s.c.SolrCore [mail]  CLOSING SolrCore org.apache.solr.core.SolrCore@404f1be7
+2021-05-18 09:49:41.742 INFO  (coreCloseExecutor-43-thread-1) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@534d34d6: rootName = null, domain = solr.core.tika, service url = null, agent id = null] for registry solr.core.tika/com.codahale.metrics.MetricRegistry@3502cf51
+2021-05-18 09:49:41.742 INFO  (coreCloseExecutor-43-thread-5) [   ] o.a.s.c.SolrCore [db]  CLOSING SolrCore org.apache.solr.core.SolrCore@4f5320df
+2021-05-18 09:49:41.766 INFO  (coreCloseExecutor-43-thread-2) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.atom tag=SolrCore@faf57fc
+2021-05-18 09:49:41.766 INFO  (coreCloseExecutor-43-thread-2) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@42a72089: rootName = null, domain = solr.core.atom, service url = null, agent id = null] for registry solr.core.atom/com.codahale.metrics.MetricRegistry@5a515c33
+2021-05-18 09:49:41.771 INFO  (coreCloseExecutor-43-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2021-05-18 09:49:41.777 INFO  (coreCloseExecutor-43-thread-4) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.mail tag=SolrCore@404f1be7
+2021-05-18 09:49:41.777 INFO  (coreCloseExecutor-43-thread-4) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5bba1cdd: rootName = null, domain = solr.core.mail, service url = null, agent id = null] for registry solr.core.mail/com.codahale.metrics.MetricRegistry@f9d2b11
+2021-05-18 09:49:41.781 INFO  (coreCloseExecutor-43-thread-2) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2021-05-18 09:49:41.790 INFO  (coreCloseExecutor-43-thread-3) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.solr tag=SolrCore@2ded8dde
+2021-05-18 09:49:41.791 INFO  (coreCloseExecutor-43-thread-3) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5e5165b7: rootName = null, domain = solr.core.solr, service url = null, agent id = null] for registry solr.core.solr/com.codahale.metrics.MetricRegistry@7d1edfb0
+2021-05-18 09:49:41.795 INFO  (coreCloseExecutor-43-thread-4) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2021-05-18 09:49:41.801 INFO  (coreCloseExecutor-43-thread-5) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.db tag=SolrCore@4f5320df
+2021-05-18 09:49:41.801 INFO  (coreCloseExecutor-43-thread-5) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@36c3ae50: rootName = null, domain = solr.core.db, service url = null, agent id = null] for registry solr.core.db/com.codahale.metrics.MetricRegistry@228dd870
+2021-05-18 09:49:41.806 INFO  (coreCloseExecutor-43-thread-3) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2021-05-18 09:49:41.816 INFO  (coreCloseExecutor-43-thread-5) [   ] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2021-05-18 09:49:41.821 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node tag=null
+2021-05-18 09:49:41.821 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@52f57666: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node/com.codahale.metrics.MetricRegistry@16b5a7c9
+2021-05-18 09:49:41.824 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm tag=null
+2021-05-18 09:49:41.824 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@1e9469b8: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm/com.codahale.metrics.MetricRegistry@388e2427
+2021-05-18 09:49:41.826 INFO  (ShutdownMonitor) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty tag=null
+2021-05-18 09:49:41.826 INFO  (ShutdownMonitor) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5a08efdc: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty/com.codahale.metrics.MetricRegistry@26cfbf4f
+2021-05-18 09:49:41.838 INFO  (ShutdownMonitor) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@5b40ceb{/solr,null,STOPPED}{/home/altyriss/MEGAsync/Informatique/Stage Server/solr-8.8.2/server/solr-webapp/webapp}
