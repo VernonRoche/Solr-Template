@@ -49,10 +49,10 @@
       Use button for remaining results
      */
     $("#show_more_button").click(function(){
-      xhttp.open("GET", "https://s.gerbeaud.com/source/PHP/solr_processor_javascript_dismax_backoffice.php?search_name="+search_name+"&page="+(window.response_object['page']+1)+"&category="+category, true);
+      xhttp.open("GET", "", true);
       xhttp.send();
     });
-    xhttp.open("GET", "https://s.gerbeaud.com/source/PHP/solr_processor_javascript_dismax_backoffice.php?search_name="+search_name+"&page=1&category="+category, true);
+    xhttp.open("GET", "", true);
     xhttp.send();
   });
 
