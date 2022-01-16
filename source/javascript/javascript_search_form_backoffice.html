@@ -1,0 +1,59 @@
+<div id="search_results_container">
+
+
+</div> <!-- /search_results_container -->
+<h1><button id="show_more_button">Show More</button></h1>
+<script>
+    /* Extract the search_name url parameter from php */
+  const search_name = "<?php echo(urlencode($search_name)); ?>";
+  const category = "<?php echo(urlencode($category)); ?>";
+  var xhttp = new XMLHttpRequest();
+  /* When document is ready, launch the main Javascript */
+  $(document).ready(function() {
+      /*
+      * Sends a request to solr processor proxy server.
+      * If we receive a response after a request to the proxy, we enter the onreadystatechange and show results.
+      */
+    xhttp.onreadystatechange = function () {
+      if (this.readyState === 4 && this.status === 200) {
+        /*
+          We got a response, show results
+        */
+        window.response_object = JSON.parse(this.responseText);
+        let search_result="";
+        /*
+          Check if we are at last page
+         */
+        let rows_to_show=window.response_object['rows'];
+        let items_left=(window.response_object['document_count']-window.response_object['start']);
+        if (items_left<rows_to_show){rows_to_show=items_left;}
+
+        /*
+        * Construct the items to be displayed on the container.
+        */
+        for (let i=0; i<rows_to_show; i++){
+          search_result+= "<h2>"+ "<a href="+window.response_object['documents'][i]['absolute_path']+">"+ window.response_object['documents'][i]['title']+"</a> </h2>";
+          search_result+= "<h4>"+window.response_object['documents'][i]['summary'] +"</h4>"
+          search_result+= "<img src="+window.response_object['documents'][i]['thumbnail']+" alt='test_miniature_image'/><br>"
+        }
+        document.getElementById("search_results_container").innerHTML += search_result;
+        /*
+        See if it's last page to remove button
+       */
+        if (response_object['is_last_page']){
+          document.getElementById("show_more_button").remove();
+        }
+      }
+    };
+    /*
+      Use button for remaining results
+     */
+    $("#show_more_button").click(function(){
+      xhttp.open("GET", "https://s.gerbeaud.com/source/PHP/solr_processor_javascript_dismax_backoffice.php?search_name="+search_name+"&page="+(window.response_object['page']+1)+"&category="+category, true);
+      xhttp.send();
+    });
+    xhttp.open("GET", "https://s.gerbeaud.com/source/PHP/solr_processor_javascript_dismax_backoffice.php?search_name="+search_name+"&page=1&category="+category, true);
+    xhttp.send();
+  });
+
+</script>

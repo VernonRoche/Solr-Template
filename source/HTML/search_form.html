@@ -1,0 +1,63 @@
+<script>
+    $(function() {
+        $("#search_name").autocomplete({
+            source: function( request, response ) {
+                // Fetch data
+                $.ajax({
+                    url: "https://s.gerbeaud.com/source/PHP/solr_processor_javascript_dismax.php?search_name="+$("#search_name").val()+"&page=1&autosuggest=true",
+                    type: 'GET',
+                    dataType: "json",
+                    success: function( data ) {
+                        let rows_to_show=data['rows'];
+                        if (rows_to_show>data['document_count']){
+                            rows_to_show=data['document_count'];
+                        }
+                        let suggestions=[];
+                        for (let i=0; i<rows_to_show; i++){
+                            let suggestion_item={};
+                            suggestion_item.label=data['documents'][i]['title'];
+                            suggestion_item.value=data['documents'][i]['absolute_path'];
+                            suggestions.push(suggestion_item);
+                        }
+                        response( suggestions );
+                    },
+                });
+            },
+            select: function(event, ui){
+                // redirect to url
+                window.location = ui.item.value;
+            },
+            dataType: "json",
+            minLength : 4,
+            delay: 400,
+            autoFocus: true,
+        })
+    });
+</script>
+
+
+<div>
+    <form method="GET" action="search_results_javascript.php">
+        <div>
+            <label for="search_name">Search something: </label> <input name="search_name" id="search_name"/>
+        </div>
+        <div>
+            <label for="category">Category: </label><select name="category" id="category">
+            <option value="I">Image</option>
+            <option value="A">Article</option>
+            <option value="F">Fiche pratique</option>
+            <option value="L">Livre</option>
+            <option value="S">Diaporama</option>
+            <option value="E">Evenement</option>
+            <option value="I">Image</option>
+            <option value="J">J</option>
+        </select>
+        </div>
+        <div>
+            <button>Search</button>
+        </div>
+    </form>
+</div>
+<div id="test_div">
+
+</div>
