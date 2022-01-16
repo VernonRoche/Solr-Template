@@ -8,7 +8,7 @@ def get_json_from_url(meta_reference):
     params = dict(
         m=meta_reference,
     )
-    url = 'https://www.gerbeaud.com/s/json_export_content.php?m='+meta_reference
+    url = ''
     resp = requests.get(url=url)
     print("!INCOMING JSON RESPONSE FROM SERVER!")
     print(resp.text)
@@ -22,7 +22,7 @@ def get_json_from_url(meta_reference):
 #   For example if A5 is the starting point and A360 the end-> [5, 360]
 ###
 def get_category_bound(category_letter):
-    url = 'https://www.gerbeaud.com/s/json_get_bounds.php'
+    url = ''
     params = dict(
         t=category_letter
     )
