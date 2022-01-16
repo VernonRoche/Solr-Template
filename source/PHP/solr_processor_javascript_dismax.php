@@ -90,7 +90,7 @@ if ($autosuggest == True) {
             'document_count' => $response_items['numFound'],
             'documents' => $autosuggest_list,];
         header('Content-type: application/json');
-        header('Access-Control-Allow-Origin: https://www.gerbeaud.com');
+        header('Access-Control-Allow-Origin: ');
 
         echo json_encode($js_response);
     } catch (SolrClientException | SolrServerException | SolrIllegalArgumentException $e) {
@@ -119,7 +119,7 @@ if ($autosuggest == True) {
             'documents' => $response_items['docs'],
             'is_last_page' => $response_items['numFound'] <= ($page_number * $solr_query->getRows())];
         header('Content-type: application/json');
-        header('Access-Control-Allow-Origin: https://www.gerbeaud.com');
+        header('Access-Control-Allow-Origin: ');
         echo json_encode($js_response);
     } catch (SolrIllegalArgumentException $e) {
         print "Oops we found this error: $e";
