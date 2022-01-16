@@ -7,14 +7,11 @@ keep_phrases = ["defType", ]
 break_symbols = ['&', '=', '~', '*', '+']
 
 
-# log_file = "/home/gerbeaud_admin/Desktop/solr/server/logs/solr.log"
-
 
 def initialize_weekly_document():
     today = date.today().strftime("%d/%m/%Y")
     current_date = today.replace('/', '_')
-    filename = '/home/gerbeaud_admin/Desktop/solr/server/top_searches/top_searches_' + current_date + "_WEEK_" + \
-               current_date.split('_')[1] + '.json'
+    filename = ''
     Path(filename).touch()
     return filename
 

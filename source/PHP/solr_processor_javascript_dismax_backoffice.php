@@ -125,7 +125,7 @@ if ($autosuggest == True) {
             'documents' => $autosuggest_list,
             'is_last_page' => $response_items['numFound'] <= ($page_number * $solr_query->getRows())];
         header('Content-type: application/json');
-        header('Access-Control-Allow-Origin: https://www.gerbeaud.com');
+        header('Access-Control-Allow-Origin: ');
         echo json_encode($js_response);
     } catch (SolrIllegalArgumentException $e) {
         print "Oops we found this error: $e";

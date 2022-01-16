@@ -21,8 +21,7 @@ def main_backoffice(args):
     ###
     #   Initialize Solr client, decide which action is taken and parse the meta_references passed in a list.
     ###
-    solr = pysolr.Solr('http://78f65bce-3431-4fcc-8e09-a67c4a157d50.pub.instances.scw.cloud:8983/solr/back_office',
-                       auth=('gerbeaud', 'SolrRocks'), always_commit=True)
+    solr = pysolr.Solr('')
     initialize = initialize_table[args[0]]
     args = args[1:]
     references = []
