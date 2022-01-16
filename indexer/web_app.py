@@ -14,8 +14,7 @@ from apscheduler.schedulers.background import BackgroundScheduler
 ###
 def check_site_updates():
     print("Checking for newly added/updated pages!")
-    solr = pysolr.Solr('http://78f65bce-3431-4fcc-8e09-a67c4a157d50.pub.instances.scw.cloud:8983/solr/gerbeaud_sample',
-                       auth=('gerbeaud', 'SolrRocks'), always_commit=True)
+    solr = pysolr.Solr('')
     if is_updated(solr):
         pass
 
