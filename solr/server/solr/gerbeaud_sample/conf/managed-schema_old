@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<schema name="example" version="1.5">
+
+<!-- DEFINE HERE THE FIELDS TO INDEX -->
+<field name="id" type="int" indexed="true"  stored="true"  multiValued="false" />
+<field name="meta_reference" type="string" indexed="true"  stored="true"  multiValued="false" />
+<field name="title" type="string" indexed="true"  stored="true"  multiValued="false" />
+<field name="question" type="text_general" indexed="true"  stored="true"  multiValued="false" />
+<field name="summary" type="text_general" indexed="true"  stored="true"  multiValued="false" />
+<field name="content" type="text_general" indexed="true"  stored="true"  multiValued="false" />
+<field name="thumbnail_reference" type="int" indexed="true"  stored="true"  multiValued="false" />
+<field name="published" type="int" indexed="true"  stored="true"  multiValued="false" />
+<field name="url" type="string" indexed="true"  stored="true"  multiValued="false" />
+<field name="_ts" type="string" indexed="true" stored="true" />
+<field name="ns" type="string" indexed="true" stored="true"/>
+<field name="_version_" type="string" indexed="true" stored="true"/>
+
+<!-- DEFINE HERE SORTING DEPENDING ON LANGUAGE -->
+<!--   
+<field name="summary_sort" type="frenchCaseInsensitive" indexed="true" stored="false"/>
+<field name="title_sort" type="frenchCaseInsensitive" indexed="true" stored="false"/>
+<field name="content_sort" type="frenchCaseInsensitive" indexed="true" stored="false"/>
+
+<copyField source="summary" dest="summary_sort"/>
+<copyField source="title" dest="summary_sort"/>
+<copyField source="content" dest="summary_sort"/>
+-->
+   
+ <uniqueKey>id</uniqueKey>
+ 
+ <!-- DEFINE HERE FIELD TYPES AND ANALYZERS -->
+ <!--
+ <fieldType name="frenchCaseInsensitive" class="solr.ICUCollationField"
+ 			locale="fr"
+ 			strength="primary" />
+ -->
+ 
+ <fieldType name="text_general" class="solr.TextField" positionIncrementGap="100">
+	 <analyzer>
+		<tokenizer class="solr.StandardTokenizerFactory"/>
+		<filter class="solr.LowerCaseFilterFactory"/>
+		<filter class="solr.ElisionFilterFactory"
+          		ignoreCase="true"
+          		articles="lang/contractions_fr.txt"/>
+        <filter class="solr.RemoveDuplicatesTokenFilterFactory" />
+        <filter class="solr.FrenchLightStemFilterFactory"/>
+	  </analyzer>
+ </fieldType>
+	  
+ <fieldType name="string" class="solr.StrField" sortMissingLast="true" />
+ <fieldType name="boolean" class="solr.BoolField" sortMissingLast="true"/>
+ <fieldType name="int" class="solr.TrieIntField" />
+ 
+ <fieldType class="solr.TextField" name="textSuggest" positionIncrementGap="100">
+  <analyzer>
+    <tokenizer class="solr.StandardTokenizerFactory"/>
+    <filter class="solr.LowerCaseFilterFactory"/>
+  </analyzer>
+</fieldType>
+ 
+ <requestHandler name="/update" class="solr.UpdateRequestHandler" >
+  <lst name="defaults">
+    <str name="update.chain">dedupe</str>
+  </lst>
+ </requestHandler>
+</schema>
+ 
